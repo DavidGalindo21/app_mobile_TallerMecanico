@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav_titulo{
+  height: 50px;
+}
+.nav_titulo h2{
+  font-size: 1.4rem;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url('./img/mecanic.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 450px; 
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor h2 {
+  font-size: 2.3rem;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 250px; 
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  font-weight: 700;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
+
+
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+option {
+  color: black;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    height: auto;
+    padding: 20px; 
+  }
+
+  .form__group {
+    max-width: 100%; 
+}
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="nav_titulo d-flex px-5 py-2 gap-3  align-items-center w-100 ">
+        <a href="./index.html"><img src="./img/svg/back.svg" alt=""></a>
+        <h2 class="m-0">Formulario de Servicio</h2>
+    </div>
+
+    
+<section>
+<div class="contenedor">
+    <div class="formulario">
+        <h2>Registro</h2>
+        <form id="formulario" action="https://formspree.io/f/mgeglqyn" method="POST" class="formulario">
+            <div class="form__group field">
+                <input type="text" class="form__field" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="nombre" class="form__label">Nombre</label>
+            </div>
+
+            <div class="form__group field">
+                <input type="text" class="form__field" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <label for="apellidos" class="form__label">Apellidos</label>
+            </div>
+
+            <div class="form__group field">
+                <input type="text" class="form__field" id="numeroTelefono" name="numeroTelefono" placeholder="Número de teléfono" required>
+                <label for="numeroTelefono" class="form__label">Número de teléfono</label>
+            </div>
+
+            <div class="form__group field">
+                <input type="text" class="form__field" id="modelo" name="modelo" placeholder="Modelo" required>
+                <label for="modelo" class="form__label">Modelo</label>
+            </div>
+
+            <div class="form__group field">
+                <input type="text" class="form__field" id="placas" name="placas" placeholder="Placas" required>
+                <label for="placas" class="form__label">Placas</label>
+            </div>
+
+            <div class="form__group field">
+                <textarea class="form__field" id="descripcion" name="descripcion" placeholder="Describe el problema" required></textarea>
+                <label for="descripcion" class="form__label">Describe el problema:</label>
+            </div>
+
+            <div class="form__group field">
+                <select  onclick="alerta()" id="servicio" name="servicio" required class="form__field">
+                    <option value="">Seleccionar servicio...</option>
+                    <option id="neumaticos" value="venta_neumaticos">Venta de neumáticos</option>
+                    <option id="pintura" value="obras_pintura">Obras de pintura</option>
+                    <option id="aire" value="aire_acondicionado">Aire acondicionado</option>
+                    <option id="agua" value="servicio_agua">Servicio de agua</option>
+                    <option id="obra" value="obra_motor">Obra de motor</option>
+                    <option id="aceite" value="aceite_filtros">Aceite de motor y filtros</option>
+                    <option id="frenos" value="reparaciones_frenos">Reparaciones de freno, cinturones y accesorios</option>
+                </select>
+            </div>
+            <br><br>
+            <button type="submit" >Enviar Correo</button>
+        </form>
+    </div>
+</div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+    <script src="./js/localStorage.js"></script>
+   
+</body>
+</html>

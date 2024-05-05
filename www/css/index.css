@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    width: 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    z-index: 2000;
+}
+.collapse{
+    background-color: antiquewhite;
+    transition: .5s;
+}
+.navbar-nav a{
+    font-size: 1.3rem;
+}
+.pantallaEntera {
+    height: 100vh;
+}
+
+.logoPrincipal {
+    width: 18%;
+}
+
+.fondoColor {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.titulo {
+    z-index: 1000;
+}
+
+#fondo {
+    background-image: url('../img/fondo.webp');
+    background-size: cover;
+    background-position: right;
+}
+
+.svg {
+    width: 4rem;
+    border-radius:
+        50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.titulo h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#nosotros {
+    margin: 5rem 0px;
+}
+
+#nosotros h1 {
+    font-size: 2.5rem;
+}
+
+p{
+    font-weight: 200;
+}
+.imagenMision{
+    background-image: url('../img/mision.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+.imagenMision p{
+    font-weight: bold;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(2px);
+    padding: 15px;
+}
+
+.imagenVision{
+    background-image: url('../img/vision.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+.imagenVision p{
+    font-weight: bold;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(2px);
+    padding: 15px;
+}
+.imagenValores{
+    background-image: url('../img/valores.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+.imagenValores ul{
+    font-weight: bold;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(2px);
+    padding: 15px 2rem;
+}
+
+#servicios{
+    margin: 5rem 0px;
+}
+#servicios h1{
+    font-size: 2.5rem;
+}
+#servicios h3{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.servicioImagen{
+    width: 20%;
+}
+#contactoForm{
+    height: 50vh;
+    background-image: url('../img/fontoContacto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.fondoContactoBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.textoContacto{
+    z-index: 1000;
+}
+.textoContacto h1{
+    color: white;
+}
+.contactanos{
+    padding: 10px 15px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+}
+#contacto{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navegador {
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(37, 37, 37);
+}
+
+a {
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.noticiass {
+    width: 83%;
+}
+
+.home {
+    margin-top: 4rem;
+}
+
+p {
+    font-weight: 200;
+}
+
+.card-title {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-top: 1.3rem;
+}
+
+label {
+    font-weight: 700;
+}
+.boton{
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid #000;
+}
+
+.boton a{
+    font-size: 1.3rem;
+}
